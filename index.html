@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cheesecake Affair</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --background-light: #FFF7F9;
+        --surface-light: #FFFFFF;
+        --primary-light: #FF6B8A;
+        --secondary-light: #FFC2D1;
+        --text-primary-light: #333333;
+        --text-secondary-light: #777777;
+
+        --background-dark: #2C2C2E;
+        --surface-dark: #3A3A3C;
+        --primary-dark: #FF708D;
+        --secondary-dark: #B98FA4;
+        --text-primary-dark: #FFFFFF;
+        --text-secondary-dark: #A9A9A9;
+      }
+      body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      body[data-theme='light'] {
+        background-color: var(--background-light);
+        color: var(--text-primary-light);
+      }
+      body[data-theme='dark'] {
+        background-color: var(--background-dark);
+        color: var(--text-primary-dark);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
